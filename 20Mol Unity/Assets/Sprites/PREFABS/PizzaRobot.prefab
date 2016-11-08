@@ -273,7 +273,9 @@ MonoBehaviour:
   m_JumpForce: 800
   m_CrouchSpeed: 0.25
   m_AirControl: 1
-  m_WhatIsGround: {}
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!124 &124000012084350012
 Behaviour:
   m_ObjectHideFlags: 1
