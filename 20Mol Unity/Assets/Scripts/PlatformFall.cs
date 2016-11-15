@@ -19,6 +19,7 @@ public class PlatformFall : MonoBehaviour {
         {
             Invoke("Fall", fallDelay);
         }
+
     }
 
     void Fall()
