@@ -22,6 +22,7 @@ GameObject:
   - 61: {fileID: 61000013857074784}
   - 251: {fileID: 251000010479112708}
   - 114: {fileID: 114000013524088392}
+  - 50: {fileID: 50000013920091486}
   m_Layer: 0
   m_Name: Falling Platform
   m_TagString: Untagged
@@ -72,6 +73,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011050370428}
   m_RootOrder: 0
+--- !u!50 &50000013920091486
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012024119578}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61000013857074784
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -97,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b78901069bb2c547be96fd78f1ac921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 1
+  fallDelay: 2
 --- !u!212 &212000012975822306
 SpriteRenderer:
   m_ObjectHideFlags: 1
