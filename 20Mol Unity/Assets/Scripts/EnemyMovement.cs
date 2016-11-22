@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour {
     void Start() {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
         Player = GameObject.FindGameObjectWithTag("Player");
-        transform.position = new Vector2(-31.42f, -2.78f);
+        
 
     }
 
