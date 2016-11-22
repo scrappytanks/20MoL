@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (coll.gameObject.tag == "Fall")
         {
-            m_CurrentHealth -= 0;
+            m_CurrentHealth -= 20;
 
             if (m_CurrentHealth == 0)
             {
