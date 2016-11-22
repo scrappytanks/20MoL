@@ -26,8 +26,11 @@ public class PlayerHealth : MonoBehaviour
     {
 
         m_CurrentHealth = m_StrartingHealth;
-       
 
+        if (m_CurrentHealth == 0)
+        {
+            Destroy(gameObject, 2f);
+        }
 
     }
 
