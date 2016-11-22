@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour
 {
 
-
+    public GameObject player;
     public float m_StrartingHealth = 20;
 
 
@@ -16,11 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
 
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+   
 
     // Update is called once per frame
     private void OnEnable()
@@ -32,25 +28,18 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    private void TakeDamage(float amount)
-    {
-        m_CurrentHealth -= amount;
 
-        if (m_CurrentHealth <= 0 && !Dead)
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+
+        if (coll.gameObject.tag == "Fall")
         {
-            OnDeath();
+            Destroy(gameObject, 2f);
         }
     }
 
-    public void OnDeath()
-    {
-
-
-        if (Dead == true)
-        {
-            Destroy(gameObject);
-        }
-    }
-
+ 
 
 }
+    
