@@ -5,6 +5,9 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public GameObject player;
+
+
+
     public float m_StrartingHealth = 20;
 
 
@@ -35,12 +38,24 @@ public class PlayerHealth : MonoBehaviour
 
         if (coll.gameObject.tag == "Fall")
         {
-            Destroy(gameObject, 2f);
+            m_CurrentHealth -= 0;
+
+            if (m_CurrentHealth == 0)
+            {
+                Destroy(gameObject, 2f);
+            } 
         }
 
         if (coll.gameObject.tag == "Spike")
         {
-            Destroy(gameObject, 2f);
+            m_CurrentHealth -= 10;
+
+            if (m_CurrentHealth == 0)
+            {
+                Destroy(gameObject, 2f);
+            }
+
+
         }
 
 

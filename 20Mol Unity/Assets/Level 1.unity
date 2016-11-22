@@ -3716,9 +3716,15 @@ Prefab:
     - target: {fileID: 68000010767854018, guid: 3d7375c5988be5d419216d1f0e504f50,
         type: 2}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114000010372886488, guid: 3d7375c5988be5d419216d1f0e504f50,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114000010372886488, guid: 3d7375c5988be5d419216d1f0e504f50, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3d7375c5988be5d419216d1f0e504f50, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1108687923
@@ -4572,7 +4578,22 @@ Prefab:
     - target: {fileID: 61000013555145262, guid: 15ea4e629d30e2c4f817022397da2edc,
         type: 2}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58000013828946874, guid: 15ea4e629d30e2c4f817022397da2edc,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000013555145262, guid: 15ea4e629d30e2c4f817022397da2edc,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.008588314
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000013555145262, guid: 15ea4e629d30e2c4f817022397da2edc,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.40459484
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15ea4e629d30e2c4f817022397da2edc, type: 2}
@@ -5252,7 +5273,12 @@ Prefab:
       propertyPath: m_Size.y
       value: 6.3819017
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6100000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1497991893
