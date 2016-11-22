@@ -37,6 +37,13 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject, 2f);
         }
+
+        if (coll.gameObject.tag == "Spike")
+        {
+            Destroy(gameObject, 2f);
+        }
+
+
     }
 
  
