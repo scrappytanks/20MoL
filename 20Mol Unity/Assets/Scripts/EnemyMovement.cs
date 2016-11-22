@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour {
     private GameObject Enemy;
     private GameObject Player;
     private float Range;
-    private float Speed = 0.5f;
+    public float Speed = 0.5f;
     private bool playerisinRange;
 
     // Use this for initialization
