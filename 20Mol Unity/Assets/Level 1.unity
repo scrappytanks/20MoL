@@ -6281,7 +6281,7 @@ GameObject:
   - 4: {fileID: 1218958250}
   - 61: {fileID: 1218958249}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Fall
   m_TagString: Fall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6298,9 +6298,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 62.096, y: 1.2608242}
+  m_Offset: {x: 5.9988227, y: 3.9069042}
   serializedVersion: 2
-  m_Size: {x: 198.86026, y: 3.5216484}
+  m_Size: {x: 86.665955, y: 8.813808}
 --- !u!4 &1218958250
 Transform:
   m_ObjectHideFlags: 0
