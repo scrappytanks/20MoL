@@ -9,7 +9,7 @@ public class DamagePlayer : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Spike")
         {
-            this.GetComponent<PlayerHealth>().m_CurrentHealth -= 20;
+            this.GetComponent<PlayerHealth>().m_CurrentHealth -= 10;
                 }
     }
 	// Use this for initialization
