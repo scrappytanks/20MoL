@@ -76,6 +76,7 @@ GameObject:
   - 114: {fileID: 114000012073200942}
   - 61: {fileID: 61000013555145262}
   - 82: {fileID: 82000011447605276}
+  - 114: {fileID: 114000011933767048}
   m_Layer: 0
   m_Name: PizzaRobot
   m_TagString: Player
@@ -129,7 +130,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013477909756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.88231, y: -3.13, z: 0}
+  m_LocalPosition: {x: -5.38, y: -3.166, z: 0}
   m_LocalScale: {x: 1, y: 1.1000003, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -322,6 +323,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000011933767048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013477909756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83703b0e7def9934c8ff3ddb1a345199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1000013477909756}
+  m_StrartingHealth: 20
+  m_CurrentHealth: 0
 --- !u!114 &114000012073200942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -345,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 10
-  m_JumpForce: 900
+  m_JumpForce: 600
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
