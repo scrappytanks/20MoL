@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     public float m_CurrentHealth;
 
-    private bool Dead;
+
 
 
 
@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
         m_CurrentHealth = m_StrartingHealth;
-        Dead = false;
+       
 
 
     }
