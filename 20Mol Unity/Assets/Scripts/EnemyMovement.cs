@@ -4,15 +4,17 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour {
 
     public Transform Target;
-    private GameObject Enemy;
     private GameObject Player;
     private float Range;
     public float Speed = 0.5f;
     private bool playerisinRange;
 
+    
+    public bool facingRight = true;
+    
+
     // Use this for initialization
     void Start() {
-        Enemy = GameObject.FindGameObjectWithTag("Enemy");
         Player = GameObject.FindGameObjectWithTag("Player");
         
 
@@ -20,13 +22,27 @@ public class EnemyMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
+        Range = Vector2.Distance(transform.position, Player.transform.position);
         if (playerisinRange)
         {
-            //Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
+            float h = Player.transform.position.x - transform.position.x;
+
+            if (h > 0 && !facingRight)
+                Flip();
+            else if (h < 0 && facingRight)
+                Flip();
+
             //transform.LookAt(Target);
-            Enemy.transform.position = Vector2.MoveTowards(Enemy.transform.position, Player.transform.position, Speed * Time.deltaTime) ;
+            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, Speed * Time.deltaTime) ;
         }
+        
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        SpriteRenderer SR = GetComponent<SpriteRenderer>();
+        SR.flipX = facingRight;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -34,12 +50,7 @@ public class EnemyMovement : MonoBehaviour {
         
         if (other.gameObject == Player)
         {
-            Debug.Log("follow the player");
-            //Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
-            //if (Range >= 15f)
-            //{
-            //    transform.Translate(Vector2.MoveTowards(Enemy.transform.position, Target.position, 100) * Speed * Time.deltaTime);
-            //}
+            
             playerisinRange = true;
         }
     }
