@@ -8787,9 +8787,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000014267702632, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
+        type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 541614262}
     - target: {fileID: 1000011398065864, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6, type: 2}
       propertyPath: m_Name
       value: enemy_0 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000012528682612, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6, type: 2}

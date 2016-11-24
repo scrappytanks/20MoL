@@ -10,6 +10,10 @@ public class EnemyMovement : MonoBehaviour {
     public float Speed = 0.5f;
     private bool playerisinRange;
 
+    [HideInInspector]
+    public bool facingRight = true;
+    [HideInInspector]
+
     // Use this for initialization
     void Start() {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
@@ -23,10 +27,24 @@ public class EnemyMovement : MonoBehaviour {
         Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
         if (playerisinRange)
         {
-            //Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
+            Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
             //transform.LookAt(Target);
             Enemy.transform.position = Vector2.MoveTowards(Enemy.transform.position, Player.transform.position, Speed * Time.deltaTime) ;
         }
+        float h = Input.GetAxis("Horizontal");
+
+        if (h > 0 && !facingRight)
+            Flip();
+        else if (h < 0 && facingRight)
+            Flip();
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -35,11 +53,11 @@ public class EnemyMovement : MonoBehaviour {
         if (other.gameObject == Player)
         {
             Debug.Log("follow the player");
-            //Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
-            //if (Range >= 15f)
-            //{
-            //    transform.Translate(Vector2.MoveTowards(Enemy.transform.position, Target.position, 100) * Speed * Time.deltaTime);
-            //}
+            Range = Vector2.Distance(Enemy.transform.position, Player.transform.position);
+            if (Range >= 15f)
+            {
+                transform.Translate(Vector2.MoveTowards(Enemy.transform.position, Target.position, 100) * Speed * Time.deltaTime);
+            }
             playerisinRange = true;
         }
     }
