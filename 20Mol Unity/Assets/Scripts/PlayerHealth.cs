@@ -55,10 +55,20 @@ public class PlayerHealth : MonoBehaviour
 
             if (m_CurrentHealth == 0)
             {
-                Destroy(gameObject, 2f);
+                Destroy(gameObject, 1f);
             }
 
 
+        }
+
+        if (coll.gameObject.tag == "Enemy")
+        {
+            m_CurrentHealth -= 5;
+
+            if (m_CurrentHealth == 0)
+            {
+                Destroy(gameObject, 1f);
+            }
         }
 
 

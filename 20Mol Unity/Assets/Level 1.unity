@@ -1827,23 +1827,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d7375c5988be5d419216d1f0e504f50, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &410510126 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011398065864, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1676707884}
---- !u!114 &410510127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 410510126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204ee4830f70ba14cbff06c57d9acf3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
 --- !u!1001 &422417638
 Prefab:
   m_ObjectHideFlags: 0
@@ -8927,16 +8910,6 @@ Prefab:
     - target: {fileID: 1000011398065864, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6, type: 2}
       propertyPath: m_Name
       value: enemy_0 (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 212000012528682612, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014267702632, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
-        type: 2}
-      propertyPath: facingRight
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6, type: 2}

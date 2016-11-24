@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   Speed: 3
-  facingRight: 1
+  facingRight: 0
 --- !u!212 &212000012528682612
 SpriteRenderer:
   m_ObjectHideFlags: 1
