@@ -6950,7 +6950,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 29ad8946fcb94224f92edad9af14842f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8799,6 +8799,11 @@ Prefab:
     - target: {fileID: 212000012528682612, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
         type: 2}
       propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014267702632, guid: 5ddeb059d8dc3554e9c7cc5543af9cf6,
+        type: 2}
+      propertyPath: facingRight
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
