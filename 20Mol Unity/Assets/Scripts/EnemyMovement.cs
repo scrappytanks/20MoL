@@ -22,6 +22,10 @@ public class EnemyMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+
+
+
         Range = Vector2.Distance(transform.position, Player.transform.position);
         if (playerisinRange)
         {

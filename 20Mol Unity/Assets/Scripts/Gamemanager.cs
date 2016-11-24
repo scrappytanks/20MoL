@@ -43,22 +43,37 @@ public class Gamemanager : MonoBehaviour
         switch (m_GameState)
         {
             case GameState.Start:
+
+
+
+
+               
+
+
                 if (Input.GetKeyUp(KeyCode.Return) == true)
                 {
 
+
+
                     MessageText.text = "";
-
-
-
-
 
                     m_GameState = GameState.Playing;
 
 
 
-                    for (int i = 0; i < Player.Length; i++)
+                    
+
+ 
+    for (int i = 0; i < Player.Length; i++)
                     {
+
+                        
+
+
                         Player[i].SetActive(true);
+
+
+
                     } 
                 }
 
